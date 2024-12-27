@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Gluten", sans-serif;
+  background-image: url(img/skyyy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+body a:hover {
+  color: #93ceff;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: #00385e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.navbar .navbar-logo {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 800;
+}
+.navbar .navbar-nav a {
+  font-size: 1.2rem;
+  font-weight: 300;
+  display: inline-block;
+  color: #fff;
+  margin: 0.5rem;
+}
+.navbar .navbar-nav a:hover {
+  color: #93ceff;
+}
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+.navbar .navbar-extra a:hover {
+  color: #93ceff;
+}
+
+#menu {
+  display: none;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.hero .content {
+  padding: 1.4rem 7%;
+}
+.hero .content h1 {
+  font-size: 4.5em;
+  color: #fff;
+  text-shadow: 4px 4px 0px rgba(0, 56, 94, 0.5);
+  line-height: 1.2;
+}
+.hero .content h1 span {
+  color: #fff4b4;
+}
+#s2 {
+  color: #fff;
+}
+.hero .content p {
+  font-size: 1.4rem;
+  font-weight: 100;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+  font-weight: 300;
+}
+.hero .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #00385e;
+  border-radius: 0.5rem;
+}
+.cta:hover {
+  box-shadow: 3px 3px 0px rgba(0, 56, 94, 0.5);
+}
+
+
+/* Print Section */
+.print {
+  padding: 5rem 7% 1.4rem;
+  color: #fff;
+}
+.title h2 {
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+  text-shadow: 4px 4px 0px rgba(0, 56, 94, 0.5);
+
+}
+.title a {
+  color: #fff;
+  font-size: 2.6rem;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 2rem;
+}
+.row a {
+  color: #fff;
+}
+.item {
+  border: 1px solid #ddd;
+  height: 100%;
+  border-radius: 5px;
+  transition: 0.3s;
+  text-align: right;
+}
+.item button {
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #ffffff00;
+  padding: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 50%;
+  margin: 5px;
+}
+.item p {
+  font-size: 1.5rem;
+  margin: 15px;
+  text-align: left;
+}
+.item img {
+  width: 100%;
+}
+.item:hover {
+  background-color: #ffffff70;
+  color: #00385e;
+  box-shadow: 13px 15px 5px rgba(0, 56, 94, 0.5);
+}
+.item button:hover {
+  color: #00385e;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+/* overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 45%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.popup img {
+  width: 100%;
+  padding: 1rem;
+}
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+
+/* collection section */
+.collection {
+  color: #fff;
+  padding: 4rem 7% 1.4rem;
+}
+.collection h2 {
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+}
+.collection h3 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 4px 4px 0px rgba(0, 80, 94, 0.5);
+
+}
+.collection a {
+  color: #fff;
+}
+
+/* footer */
+footer {
+  justify-content: space-between;
+  padding: 1.2rem 7%;
+  background-color: #00385e;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+footer .col {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+footer h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+footer a {
+  color: #fff;
+  font-size: 1.3rem;
+}
+footer img {
+  width: 25%;
+  margin: 2rem;
+  margin-top: 0.5rem;
+  border-radius: 7%;
+  transition: 0.5s;
+}
+footer img:hover {
+  transform: rotate(8deg);
+}
+footer .links {
+  font-weight: 300;
+  line-height: 2rem;
+  display: inline-block;
+  color: #fff;
+  margin: 2rem;
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+footer .links a:hover {
+  color: #fff4b4;
+}
+footer .info {
+  font-weight: 300;
+  line-height: 2rem;
+  display: inline-block;
+  color: #fff;
+  margin: 2rem;
+  margin-top: 1rem;
+  margin-left: 5rem;
+}
+footer .credit {
+  display: block;
+  text-align: center;
+}
+footer .credit p {
+  font-weight: 100;
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 10px;
+}
+footer .credit p span {
+  color: #fff4b4;
+}
+
+
+/* media queries */
+
+/* tablet */
+@media (max-width: 900px) {
+  html {
+    font-size: 75%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    background-color: #fff6c2;
+    top: 100%;
+    right: -100%;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: #00385e;
+    text-shadow: 0.1px 0.1px 0.3px #00385e;
+    display: block;
+    margin: 0.7rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    background-color: #fff6c2;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #93ceff;
+    border-right: 1px solid #93ceff;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .hero {
+    min-height: 70vh;
+  }
+}
+
+/* mobile phone */
+
+@media (max-width: 720px) {
+  html {
+    font-size: 55%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .hero {
+    min-height: 55vh;
+  }
+}

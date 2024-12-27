@@ -1,0 +1,245 @@
+/* element */
+#balloon,
+#heart,
+#stars,
+#cloud,
+#envelope,
+#music,
+#music2,
+#earbuds,
+#egg,
+#egg2 {
+  font-size: 6rem;
+  position: absolute;
+  text-shadow: 4px 4px 0px rgba(0, 56, 94, 0.5);
+}
+#bow,
+#mirror,
+#shoes,
+#swan,
+#tulip,
+#berry,
+#cake,
+#letter,
+#teddy,
+#bubble,
+#jelly {
+  font-size: 2.5rem;
+  position: absolute;
+  text-shadow: 4px 4px 0px rgba(0, 56, 94, 0.5);
+}
+#balloon {
+  rotate: 350deg;
+  font-size: 7rem;
+  top: 8rem;
+  left: 4rem;
+  animation-name: left;
+  animation-duration: 3s;
+}
+#stars {
+  color: #fff4b4;
+  font-size: 4rem;
+  rotate: 340deg;
+  top: 25rem;
+  left: 19rem;
+  animation-name: left;
+  animation-duration: 4s;
+}
+#music {
+  color: #93ceff;
+  font-size: 5rem;
+  rotate: 350deg;
+  top: 33rem;
+  left: 5rem;
+  animation-name: left;
+  animation-duration: 3s;
+}
+#music2 {
+  color: #93efff;
+  font-size: 3rem;
+  rotate: 10deg;
+  top: 36rem;
+  left: 9rem;
+  animation-name: left;
+  animation-duration: 3s;
+}
+#egg2 {
+  font-size: 4rem;
+  top: 22rem;
+  left: 4rem;
+  animation-name: left;
+  animation-duration: 3s;
+}
+#teddy {
+  rotate: 350deg;
+  top: 17rem;
+  left: 10rem;
+  animation-name: left;
+  animation-duration: 3.5s;
+}
+#shoes {
+  font-size: 3rem;
+  rotate: 30deg;
+  top: 25rem;
+  left: 11rem;
+  animation-name: left;
+  animation-duration: 3.5s;
+}
+#swan {
+  font-size: 5rem;
+  top: 29rem;
+  left: 28rem;
+  animation-name: left;
+  animation-duration: 4s;
+}
+#mirror {
+  font-size: 5rem;
+  rotate: 20deg;
+  top: 32rem;
+  left: 20rem;
+  animation-name: left;
+  animation-duration: 3.7s;
+}
+#bow {
+  rotate: 340deg;
+  top: 5rem;
+  left: 13rem;
+  animation-name: left;
+  animation-duration: 3.7s;
+}
+#bubble {
+  top: 31rem;
+  left: 14rem;
+  animation-name: left;
+  animation-duration: 3.5s;
+}
+#jelly {
+  font-size: 3rem;
+  top: 20rem;
+  left: 30rem;
+  animation-name: left;
+  animation-duration: 4s;
+}
+
+/* right */
+#heart {
+  color: #ffa7d0;
+  rotate: 20deg;
+  top: 20rem;
+  right: 15rem;
+  font-size: 4rem;
+  animation-name: right;
+  animation-duration: 4s;
+}
+#cloud {
+  top: 5rem;
+  right: 10rem;
+  animation-name: right;
+  animation-duration: 3.5s;
+}
+#envelope {
+  rotate: 345deg;
+  top: 29rem;
+  right: 22rem;
+  animation-name: right;
+  animation-duration: 4s;
+}
+#earbuds {
+  font-size: 3rem;
+  rotate: 20deg;
+  top: 17rem;
+  right: 7rem;
+  animation-name: right;
+  animation-duration: 3s;
+}
+#egg {
+  color: #fff4b4;
+  top: 32rem;
+  right: 5rem;
+  animation-name: right;
+  animation-duration: 3s;
+}
+#letter {
+  rotate: 20deg;
+  top: 24rem;
+  right: 6rem;
+  animation-name: right;
+  animation-duration: 3s;
+}
+#cake {
+  rotate: 10deg;
+  top: 26rem;
+  right: 13rem;
+  animation-name: right;
+  animation-duration: 3.5s;
+}
+#berry {
+  rotate: 340deg;
+  top: 11rem;
+  right: 4.5rem;
+  animation-name: right;
+  animation-duration: 3s;
+}
+#tulip {
+  top: 35rem;
+  right: 15rem;
+  animation-name: right;
+  animation-duration: 3s;
+}
+
+#balloon2,
+#balloon3 {
+  position: absolute;
+  color: #93efff;
+  font-size: 7rem;
+  rotate: 20deg;
+  top: 110vh;
+  right: 10rem;
+}
+#balloon3 {
+  color: #93ceff;
+  font-size: 4rem;
+  rotate: 340deg;
+  top: 120vh;
+  right: 15rem;
+}
+#bow2,
+#teddy2,
+#tulip2 {
+  font-size: 3rem;
+}
+
+@keyframes left {
+  0% {
+    color: #ffffff00;
+    font-size: 1px;
+    left: 45rem;
+    top: 20rem;
+    text-shadow: none;
+  }
+  20% {
+    color: #ffffff00;
+    text-shadow: none;
+  }
+  75% {
+    color: #fff;
+  }
+}
+@keyframes right {
+  0% {
+    color: #ffffff00;
+    font-size: 1px;
+    right: 45rem;
+    top: 20rem;
+    text-shadow: none;
+
+  }
+  15% {
+    color: #ffffff00;
+    text-shadow: none;
+
+  }
+  75% {
+    color: #fff;
+  }
+}

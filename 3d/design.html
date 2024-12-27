@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My 3D Model</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Modak&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>My 3D Model</h1>
+    </header>
+
+    <section class="model-viewer">
+      <button class="scroll-button-left" id="1">&lt;</button>
+      <div class="item" id="a">
+        <model-viewer id="model" src="model/bear.glb" camera-controls>
+        </model-viewer>
+        <h2>Coco</h2>
+      </div>
+      <div class="item" id="b">
+        <model-viewer id="model" src="model/bunny.glb" camera-controls>
+        </model-viewer>
+        <h2>Pinky</h2>
+      </div>
+      <div class="item" id="c">
+        <model-viewer id="model" src="model/cat.glb" camera-controls>
+        </model-viewer>
+        <h2>Bis-Cat</h2>
+      </div>
+      <div class="item" id="d">
+        <model-viewer id="model" src="model/duckie.glb" camera-controls>
+        </model-viewer>
+        <h2>Yellow-Mellow</h2>
+      </div>
+      <div class="item" id="e">
+        <model-viewer id="model" src="model/penguin.glb" camera-controls>
+        </model-viewer>
+        <h2>Penggie</h2>
+      </div>
+      <button class="scroll-button-right" id="2">&gt;</button>
+    </section>
+
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
+
+    <!-- javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
