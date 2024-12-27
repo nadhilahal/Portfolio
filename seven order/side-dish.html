@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seven Order</title>
+
+    <!-- icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="csskelompokpweb.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <h1>SEVEN<span>.ORDER</span></h1>
+      <div class="navbar-nav">
+        <a href="home.html">Home</a>
+        <a href="#container">Menu</a>
+        <a href="home.html#about">About Us</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="order"><i data-feather="shopping-bag"></i></a>
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <div class="order-container">
+      <h3>Your Order</h3>
+      <button class="order-button" onclick="pesan('secara delivery')">
+        Delivery
+      </button>
+      <button class="order-button" onclick="pesan('secara pick-up')">
+        Pick-up
+      </button>
+    </div>
+
+    <header style="background-image: url(image/french-fries.jpg)">
+      <h1>| SIDE DISHES</h1>
+    </header>
+
+    <section class="container">
+      <div class="menu-1">
+        <h2>MENU</h2>
+        <a href="makanan.html">Foods</a><br />
+        <a href="minuman.html">Drinks</a><br />
+        <a href="paket.html">Package</a><br />
+        <a href="dessert.html">Dessert</a><br />
+        <a href="side-dish.html">Side Dishes</a><br />
+        <a href="saus.html">Sauce</a><br />
+      </div>
+
+      <div class="menu-2" id="menu-2">
+        <div class="menu-item">
+          <img src="image/es-teh.jpg" />
+          <h3>Es Teh</h3>
+          <p>Rp 8.000</p>
+          <button class="order-button" onclick="pesan('Es Teh')">Pesan</button>
+        </div>
+        <div class="menu-item">
+          <img src="image/mineral-water.webp" />
+          <h3>Air Mineral</h3>
+          <p>Rp 5.000</p>
+          <button class="order-button" onclick="pesan('Air Mineral')">
+            Pesan
+          </button>
+        </div>
+        <div class="menu-item">
+          <img src="image/es-campur.jpg" />
+          <h3>Es Campur</h3>
+          <p>Rp 15.000</p>
+          <button class="order-button" onclick="pesan('Es Campur')">
+            Pesan
+          </button>
+        </div>
+        <div class="menu-item">
+          <img src="image/coffee.jpg" />
+          <h3>Kopi</h3>
+          <p>Rp 12.000</p>
+          <button class="order-button" onclick="pesan('Kopi')">Pesan</button>
+        </div>
+        <div class="menu-item">
+          <img src="image/cola.jpg" />
+          <h3>Coca-Cola</h3>
+          <p>Rp 8.000</p>
+          <button class="order-button" onclick="pesan('Coca-Cola')">
+            Pesan
+          </button>
+        </div>
+        <div class="menu-item">
+          <img src="image/matcha.jpg" />
+          <h3>Matcha</h3>
+          <p>Rp 12.000</p>
+          <button class="order-button" onclick="pesan('Matcha')">Pesan</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer start -->
+    <footer>
+      <div class="col">
+        <div class="social">
+          <a href="#"><i data-feather="instagram"></i></a>
+          <a href="#"><i data-feather="twitter"></i></a>
+        </div>
+
+        <div class="links">
+          <a href="#home">Home</a><br />
+          <a href="tim 7 pweb.html">Menu</a><br />
+          <a href="tim 7 pweb.html">About Us</a><br />
+          <a href="tim 7 pweb.html">Shop</a><br />
+          <a href="#ref">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="credit">
+        <div class="shop-maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.2501011068816!2d104.78164117396939!3d-3.027399640005884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b9d658a45f26b%3A0x5b4bd87b634edfc9!2sAnjungan%20lubuk%20linggau!5e0!3m2!1sid!2sid!4v1709212060874!5m2!1sid!2sid"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <p>Created by <span>Kelompok 7</span> | &copy; 2024.</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <script>
+      function pesan(item) {
+        alert("Anda telah memesan: " + item);
+      }
+    </script>
+
+    <!-- javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>

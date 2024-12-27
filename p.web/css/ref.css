@@ -1,0 +1,15 @@
+.ref-site {
+  padding: 8rem 7% 1.4rem;
+}
+.ref-site h2 {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.ref-site p {
+  font: 1.2rem Poppins;
+  font-weight: 200;
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+}

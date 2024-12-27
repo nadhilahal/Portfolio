@@ -1,0 +1,339 @@
+:root {
+  --primary: #d85600;
+  --bg: #1f1f1f;
+  --dark: #3e527a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Pixelify Sans", "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+  /* min-height: 3000px; */
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 7%;
+  background-color: var(--primary);
+  border-bottom: 1px solid #bd4b00;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.navbar .navbar-logo {
+  font-size: 2rem;
+  color: #fff;
+}
+.navbar .navbar-logo span {
+  color: #fff4b4;
+}
+.navbar .navbar-nav a {
+  font: 1rem Poppins;
+  display: inline-block;
+  color: #fff;
+  margin: 0.1rem;
+}
+.navbar .navbar-nav a:hover {
+  color: #fff4b4;
+}
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #fff4b4;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+.navbar .navbar-extra a:hover {
+  color: #93ceff;
+}
+
+#menu {
+  display: none;
+}
+
+/* --index-- */
+/* Hero Section */
+.hero {
+  min-height: 110vh;
+  /* color: #00385e; */
+  display: flex;
+  align-items: center;
+  background-image: url("../css/img/catt.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.hero .content,
+.css .css-content,
+.ref .ref-content,
+.web .web-content {
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+}
+.hero .content h1 {
+  font-size: 3.5em;
+  color: #fff;
+  text-shadow: 1px 2px 5px rgba(0, 56, 94, 0.5);
+  line-height: 1.2;
+}
+.hero .content h1 span {
+  color: #fff4b4;
+}
+.hero .content p,
+.css .css-content p,
+.ref .ref-content p,
+.web .web-content p {
+  font: 1.4rem Poppins;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+  font-weight: 400;
+  text-shadow: 1px 2px 5px rgba(0, 56, 94, 0.5);
+
+  /* mix-blend-mode: difference; */
+}
+.cta,
+.css-cta,
+.ref-cta,
+.web-cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(44, 44, 44, 0.5);
+}
+
+/* CSS Section */
+.css {
+  min-height: 120vh;
+  /* color: #00385e; */
+  display: flex;
+  align-items: center;
+  background-image: url("../css/img/daisy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.css::before,
+.ref::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  top: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 7%,
+    rgba(31, 31, 31, 1) 90%
+  );
+}
+.css::after,
+.ref::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(31, 31, 31, 1) 7%,
+    rgba(255, 255, 255, 0) 90%
+  );
+}
+.css .css-content h1 {
+  font-size: 3.5em;
+  color: #3e527a;
+  text-shadow: 1px 2px 5px rgba(0, 56, 94, 0.5);
+  line-height: 1.2;
+}
+.css .css-content h1 span,
+.ref .ref-content h1 span {
+  color: #fff4b4;
+}
+
+.web {
+  min-height: 110vh;
+  /* color: #00385e; */
+  display: flex;
+  align-items: center;
+  background-image: url("../css/img/ducks.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.web .web-content h1 {
+  font-size: 3.5em;
+  color: #fff;
+  text-shadow: 1px 2px 5px rgba(0, 56, 94, 0.5);
+  line-height: 1.2;
+}
+.web .web-content h1 span {
+  color: #3e527a;
+}
+
+.ref {
+  min-height: 120vh;
+  /* color: #00385e; */
+  display: flex;
+  align-items: center;
+  background-image: url("../css/img/orange.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.ref .ref-content h1 {
+  font-size: 3.5em;
+  color: #2e9c8f;
+  text-shadow: 1px 2px 5px rgba(0, 56, 94, 0.5);
+  line-height: 1.2;
+}
+/* --index end-- */
+
+/* --footer-- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 7%;
+  background-color: var(--bg);
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+footer .col {
+  display: flex;
+}
+footer .social a {
+  color: #fff;
+  padding: 0.5rem;
+}
+footer .social a:hover {
+  color: #93ceff;
+}
+footer .links a {
+  font: 300 1rem Poppins;
+  display: inline-block;
+  color: #fff;
+  margin: 0.01rem;
+  margin-left: 5rem;
+}
+footer .links a:hover {
+  color: #fff4b4;
+}
+footer .credit p {
+  font: 100 1rem Poppins;
+  color: #fff;
+  margin: 1rem;
+  margin-top: 25%;
+}
+footer .credit p span {
+  color: #fff4b4;
+}
+/* --footer end-- */
+
+/* --media queries-- */
+/* tablet */
+@media (max-width: 640px) {
+  html {
+    font-size: 60%;
+  }
+
+  #search {
+    display: inline-block;
+  }
+  #menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #3e527a;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+  .navbar .navbar-nav a {
+    color: #fff4b4;
+    text-shadow: 0.1px 0.1px 0.3px #2c2c2c;
+    display: block;
+    margin: 0.7rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    background-color: #3e527a;
+    border-top: 1px solid #fff4b4;
+    border-left: 1px solid #fff4b4;
+    border-bottom: 1px solid #2c2c2c;
+    border-right: 1px solid #2c2c2c;
+  }
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .about .row {
+    flex-wrap: wrap;
+  }
+  .about .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+  .about .row .content {
+    padding: 0;
+  }
+  .about .row .content h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+  .about .row .content p {
+    font-size: 1.6rem;
+  }
+}
+
+/* mobile phone */
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+}
