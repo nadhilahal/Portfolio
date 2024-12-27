@@ -147,15 +147,15 @@ a {
   margin-top: 2rem;
 }
 #i1 {
-  background-image: url(../image/skill.png);
+  background-image: url(image/skill.png);
   background-size: cover;
 }
 #i2 {
-  background-image: url(../image/skill2.png);
+  background-image: url(image/skill2.png);
   background-size: cover;
 }
 #i3 {
-  background-image: url(../image/skill3.png);
+  background-image: url(image/skill3.png);
   background-size: cover;
 }
 .item h2 {
